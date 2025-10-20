@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwvdvd4ncyjpe"]
+
+[ext_resource type="Script" uid="uid://b2i2evswni1k8" path="res://Opening_Scene.gd" id="1_g4ivo"]
+[ext_resource type="Resource" uid="uid://b752pfgxyvuc2" path="res://OpeningScene.dialogue" id="2_8a4as"]
+[ext_resource type="Texture2D" uid="uid://cet7jvnwok2li" path="res://Assets (Placeholder)/Subway car holder.jpeg" id="3_kn0c0"]
+[ext_resource type="PackedScene" uid="uid://dphrbuqjiei8b" path="res://Greed and Charity.tscn" id="4_0euvf"]
+
+[sub_resource type="PackedScene" id="PackedScene_7rtrj"]
+_bundled = {
+"base_scene": 0,
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"names": PackedStringArray("GreedAndCharity"),
+"node_count": 1,
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 2147483647, 0, -1, 0, 0),
+"variants": [ExtResource("4_0euvf")],
+"version": 3
+}
+
+[node name="Node2D" type="TextureRect"]
+script = ExtResource("1_g4ivo")
+dialogueresource = ExtResource("2_8a4as")
+background = ExtResource("3_kn0c0")
+nextscene = SubResource("PackedScene_7rtrj")
+metadata/_custom_type_script = "uid://b2i2evswni1k8"
+
+[node name="SubwayCarHolder" type="Sprite2D" parent="."]
+position = Vector2(569.00006, 406)
+scale = Vector2(4.499999, 4.5)
+texture = ExtResource("3_kn0c0")

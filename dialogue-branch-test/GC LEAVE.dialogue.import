@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://by0qvc14ho4dt"
+path="res://.godot/imported/GC LEAVE.dialogue-df54ae2b0c5f0c33fdefdf49eb1fb919.tres"
+
+[deps]
+
+source_file="res://GC LEAVE.dialogue"
+dest_files=["res://.godot/imported/GC LEAVE.dialogue-df54ae2b0c5f0c33fdefdf49eb1fb919.tres"]
+
+[params]
+
+defaults=true

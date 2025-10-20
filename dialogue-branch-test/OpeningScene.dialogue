@@ -1,0 +1,23 @@
+Conductor: Tickets, please.
+- Huh?
+	Conductor: Your tickets.
+- Oh, uh, let me find it…
+[i] You can’t find your ticket. [/i]
+You: I can’t find it.
+Conductor: Do you know where you’re going?
+- No…
+- Whatever way the train is going.
+	[i] The Conductor looks annoyed. [/i]
+Conductor: Do you know how you got on this train?
+- Walking, probably.
+	[i] The conductor doesn't seem to find you funny. [/i]
+	Conductor: Listen, kid-
+- No sir.
+	Conductor: I see.
+Conductor: So you don't know how you got here, or where you're going,
+Conductor: And you don't have a ticket?
+[i] A young child runs past. [/i]
+Conductor: Ah, sh- I’ll be back. 
+Conductor: You better find yourself a ticket, okay?
+[i] He runs off after the child. [/i]
+=> END

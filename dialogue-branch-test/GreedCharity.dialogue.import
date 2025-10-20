@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dm20nslhdwtmq"
+path="res://.godot/imported/GreedCharity.dialogue-5d8cfc40d19106bf2af9f0ceb66348d6.tres"
+
+[deps]
+
+source_file="res://GreedCharity.dialogue"
+dest_files=["res://.godot/imported/GreedCharity.dialogue-5d8cfc40d19106bf2af9f0ceb66348d6.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://css3vrrbc1f3"]
+
+[ext_resource type="PackedScene" uid="uid://dphrbuqjiei8b" path="res://Greed and Charity.tscn" id="1_m6mjt"]
+[ext_resource type="Script" uid="uid://cs6ibc5u7w4ik" path="res://greed_and_charity.gd" id="2_nwvgk"]
+
+[node name="GreedAndCharity" instance=ExtResource("1_m6mjt")]
+script = ExtResource("2_nwvgk")

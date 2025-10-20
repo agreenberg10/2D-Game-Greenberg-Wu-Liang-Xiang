@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bnysyiu0lchok"
+path="res://.godot/imported/Trust - NO CHARITY.dialogue-f9f1b30d328382616ffaf0a8d48e0012.tres"
+
+[deps]
+
+source_file="res://Trust - NO CHARITY.dialogue"
+dest_files=["res://.godot/imported/Trust - NO CHARITY.dialogue-f9f1b30d328382616ffaf0a8d48e0012.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ddya1vevgwf5x"
+path="res://.godot/imported/Charity Sits.dialogue-31a656bfd06a4790d15d7f3e7024c15c.tres"
+
+[deps]
+
+source_file="res://Charity Sits.dialogue"
+dest_files=["res://.godot/imported/Charity Sits.dialogue-31a656bfd06a4790d15d7f3e7024c15c.tres"]
+
+[params]
+
+defaults=true

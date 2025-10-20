@@ -1,0 +1,24 @@
+~ start
+[i] The child from before runs past again, a blur, followed by the Conductor. [/i]
+[i] The Conductor stops to catch his breath. [/i]
+The Conductor: Oh, I forgot about you.
+The Conductor: Did you manage to figure out your ticket situation?
+- No sir, I'm sorry.
+- I completely forgot- See. there was this weird guy-
+The Conductor: So no tickets?
+- No sir.
+The Conductor: And do you expect me to keep you on this train with no ticket?
+- No, sir... I'll leave.
+	The Conductor: Good idea.
+	=> END
+- I don't need a stupid ticket.
+	The Conductor: Get off the train.
+	=> END
+- I don't expect it, but I am hoping you'll let me stay.
+The Conductor: And why's that?
+- Because I don't know where I'm going, but I feel like it's important I get there.
+	The Conductor: I appreciate the sentiment, I really do, but without a ticket...
+	[i] The child runs past again. [/i]
+	The Conductor: You're lucky I need to handle this. I'll be back.
+	=> END
+=> END

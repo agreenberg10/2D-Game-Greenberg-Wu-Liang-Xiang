@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dphrbuqjiei8b"]
+
+[ext_resource type="Script" uid="uid://b2i2evswni1k8" path="res://Opening_Scene.gd" id="1_iymw6"]
+[ext_resource type="Resource" uid="uid://dm20nslhdwtmq" path="res://GreedCharity.dialogue" id="2_occsw"]
+
+[node name="GreedAndCharity" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iymw6")
+dialogueresource = ExtResource("2_occsw")
+metadata/_custom_type_script = "uid://b2i2evswni1k8"

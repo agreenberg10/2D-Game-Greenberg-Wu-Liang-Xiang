@@ -1,0 +1,42 @@
+~ start
+Little Girl: Thank you for letting me stay...
+- Of course.
+- (Stay Silent)
+[i] Silence falls betweeen you two. [/i]
+[i] The child from before runs past again, a blur, followed by the Conductor. [/i]
+[i] The Conductor stops to catch his breath. [/i]
+The Conductor: Oh, I forgot about you.
+[i] He notices the little girl sitting across from you. [/i]
+The Conductor: Oh, you're here too. Good.
+[i] He turns back to you. [/i]
+The Conductor: Did you manage to figure out your ticket situation?
+- No sir, I'm sorry.
+- I completely forgot- See. there was this weird guy-
+The Conductor: So no tickets?
+- No sir.
+The Conductor: And do you expect me to keep you on this train with no ticket?
+- No, sir... I'll leave.
+	The Conductor: Good idea.
+	=> END
+- I don't need a stupid ticket.
+	The Conductor: Get off the train.
+	=> END
+- I don't expect it, but I am hoping you'll let me stay.
+The Conductor: And why's that?
+- Because I don't know where I'm going, but I feel like it's important I get there.
+	The Conductor: I appreciate the sentiment, I really do, but without a ticket...
+	[i] The child runs past again. [/i]
+	The Conductor: You're lucky I need to handle this. I'll be back.
+	=> END
+- Because a strange man left this little girl with me, and I feel I need to keep her safe.
+	The Conductor: I appreciate the sentiment, I really do, but without a ticket...
+	[i] The little girl holds out a torn piece of paper. [/i]
+	The Conductor: What's this?
+	The Conductor: A ticket?
+	The Conductor: Well, children don't need tickets. Where'd you get this?
+	Little Girl: Someone stole it for me.
+	The Conductor: Oh. Stole is, uh, interesting...
+	[i] He turns back to you. [/i]
+	The Conductor: But it looks like it's your lucky day. Here's your ticket.
+	The Conductor: You can stay after all.
+=> END

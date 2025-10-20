@@ -1,0 +1,38 @@
+~ start
+[i] The child that’s been running around stops for a moment. They hide behind a pole. [i]
+- Give a small smile, but say nothing.
+	[i] The child inches away from the pole to get a better look at you. [/i]
+- Where are your parents? Let me call the conductor so we can look for them - 
+	[i] The child darts away. [/i]
+	=> END
+- Hey kid, you okay?
+	[i] The child adjusts their hood and hugs their toy cat closer. [/i] 
+[i] The child stares at you with unblinking curiosity. [/i]
+- What’s your name?
+	[i] The child shakes their head and scowls. [/i]
+- We'll be sitting here for a while. Feel free to join us.
+	[i] The child’s eyes dart between you and the little girl. [/i]
+	
+	- My name is… I can’t… I don’t know…
+		Little Girl: That's quite common here.
+	- Stay quiet.
+[i] The child relaxes their shoulders. [/i]
+
+- Do you know where we’re headed?
+[i] The child shakes their head no. [/i]
+Charity: Do YOU know where we're headed?
+- No...
+	[i] The child sits down, stroking their cat plush.
+	=> END
+- Of course.
+	Charity: I see...
+	Charity: Are we headed somewhere good? Or somewhere bad?
+	- Good, I think.
+		Charity: That's what everyone thinks.
+	- Bad, I think.
+		Charity: How unfortunate...
+	- I'm not sure yet.
+		Charity: That's okay. Most people don't know...
+		Charity: We can only convince ourselves one way or another.
+[i] The child sits down. [/i]
+=> END

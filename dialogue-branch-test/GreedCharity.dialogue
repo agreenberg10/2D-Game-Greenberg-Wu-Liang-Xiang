@@ -1,0 +1,95 @@
+~ start
+[i] A greasy-looking man enters with a little girl. [/i]
+Strange Man: Oh, good, someone else is here, [speed=0.5] heh heh...
+Strange Man: [i] (To the little girl) [/i] You keep your mouth shut kid, eh?
+[i] The man turns to you. [/i]
+Strange Man: Hey, kid.
+Strange Man: I've got an investment opportunity for ya.
+Strange Man: Ya interested? It's called crypto.
+- Uh, no thanks.
+	Strange Man: Aw, come on, I'll even give you a little discount! For, uh,
+	Strange Man: Being cool, or something.
+- Sure
+	Strange Man: Great!
+	Strange Man: What have you got to trade?
+	- Doesn't look like I have anything.
+	- Uh...
+	Strange Man: Typical. Typical!
+	Strange Man: People only wanna take. Nothing to give in return...
+	[i] They leave. [/i]
+	=> EndEarly
+You: Who are you?
+Strange Man: My name don't matter, eh heh.
+Strange Man: But you know what? You seem smart, kid.
+Strange Man: Are you smart?
+- I guess so
+	Strange Man: Aw great, it takes real balls to tell people you got potential, you know? 
+	Strange Man: People will try to take advantage of you. 
+	Strange Man: Not me, though. Not me.
+- Not really.
+	Strange Man: Ah, well the smartest folks keep it to themselves, ya dig?
+	Strange Man: So people don’t try to, ya know, take advantage of them.
+	Strange Man: So you must be smart.
+Strange Man: So here's the real deal. I run a business, ya see. I'm an entrepeneur of sorts. And I'd like to get you in.
+Strange Man: Here's how it works, you buy some products from me, and you gotta sell 'em.
+Strange Man: And you can recruit other people to sell products, too, and you're their boss.
+Strange Man: And you give part of the money to me, because that's how business works, ya see...
+- Isn't that an MLM?
+	Strange Man: No! Well, maybe, if you want to put it like that, I guess in some ways, maybe-
+	Strange Man: Doesn't matter.
+- No thanks.
+Strange Man: You haven't even heard the best part!
+Strange Man: [speed=2.5] So basically, because of the multiple levels of the sales force, the money basically makes itself, especially once you start factoring in the the expansion opportunities, and ya see, when you start to think about overall capitol and investment, it really gets profitable, and so the profit is obviously the most important part, and overall profit increase, and, and I mean think about how many suckers in your life - Er, friends, or whatever, would buy from you? Consider the profit scaling, consider how much money I - er, we, I guess, we could make, ya dig? Are you seeing the vision, 'cause I'm not done, there's more, let me explain how... [/speed=2.5]
+[i] The strange man keeps rambling about his business opportunity. [/i]
+[i] The little girl's stomach growls. [/i]
+[i] A loaf of bread materializes in your hands. It's warm, like it was just taken out of the oven. [/i]
+Little Girl: Bread?
+[i] Her stomach growls again. [/i]
+Little Girl: Could I...[wait=.5] Maybe have a piece?
+- Oh, uh, no...
+	[i] The strange man grabs the bread and swallows it down, ripping and tearing at the loaf. [/i]
+- Here ya go.
+	[i] She takes the bread. [/i]
+	Little Girl: Thank you very much.
+	[i] She looks at the bread. [wait=.5] Then to the man standing next to her. [/i]
+	[i] She hands him the bread. [/i]
+	[i] The strange man grabs the bread and swallows it down, ripping and tearing at the loaf. [/i]
+	[i] His teeth clack and grind as he gnaws at the crust like an animal sucking marrow from a bone. [/i]
+	[i] It's... [speed=0.2] disgusting. [/i]
+	- (Say nothing)
+	- Hey, I gave that to her! Not you!
+Little Girl: It's okay...
+- No it's not.
+- Okay...
+Strange Man: Eh, Life ain't fair kid. Why do you think I'm stuck toting this kid around?
+[i] The little girl's stomach growls. [/i]
+Strange Man: So, do you want in on my business or what?
+- You're still talking about that?
+	Strange Man: Of course! That's my money, er, uh, dream!
+	Strange Man: So you want in?
+	- No!
+		Strange Man: Pshh, typical. Wasting my time...
+		[i] He grabs the girl and walks away. [/i]
+		=> EndEarly
+	- I'm more concerned about the kid.
+- She's not your kid? Who's kid is this?
+Strange Man: What's it matter? Why are you so obsessed with this kid?
+- (To the Strange Man) So you don't know this kid?
+- (To the Little Girl) Hey, kid, do you know this man?
+Strange Man: If you're so obsessed with her, I'll give her to ya then?
+Strange Man: But, eh, what have you got to trade?
+- Are you trying to sell this child?
+- This is crazy... Where is the conductor?
+Strange Man: Geez, man, you want the kid or not?
+Strange Man: Anything to get her off my back at this point. 
+- I don't think that's a good idea...
+	Strange Man: Pshh, typical. Wasting my time...
+	[i] He grabs the girl and walks away. [/i]
+	=> EndEarly
+- Leave her with me then. I'll keep her safe.
+	Strange Man: Finally, damn. Someone to take her off my hands.
+	Strange Man: Yoiu heard them, girl. Sit down. I won't be back.
+	[i] The man walks away, pleased by the deal. The girl sits down. [/i]
+=> END
+~ END
+~ EndEarly

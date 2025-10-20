@@ -1,0 +1,27 @@
+~ start
+[i] The child that’s been running around stops for a moment. They hide behind a pole. [i]
+- Give a small smile, but say nothing.
+	[i] The child inches away from the pole to get a better look at you. [/i]
+- Where are your parents? Let me call the conductor so we can look for them - 
+	[i] The child darts away. [/i]
+	=> END
+- Hey kid, you okay?
+	[i] The child darts away. [/i] 
+	=> END
+[i] The child stares at you with unblinking curiosity. [/i]
+- What’s your name?
+	[i] The child darts away. [/i]
+	=> END
+- I’ll be sitting here for a while. Feel free to join me.
+	[i] The child’s eyes dart between you and the empty seat. [/i]
+	- My name is… I can’t… I don’t know…
+	- Stay quiet.
+[i] The child relaxes their shoulders. [/i]
+
+- Do you know where we’re headed?
+[i] The child shakes their head no. [/i]
+	
+- That makes two of us.
+[i] The child sits down. [/i]
+
+=> END
