@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://0l0gu0ojmffv"]
+
+[ext_resource type="Script" uid="uid://c7sngun4v8v62" path="res://main.gd" id="1_p46e8"]
+[ext_resource type="Texture2D" uid="uid://dpefm6me651tp" path="res://Subway car holder.jpeg" id="2_5nia5"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="main" type="Node2D" parent="."]
+script = ExtResource("1_p46e8")
+
+[node name="Character" type="Node2D" parent="main"]
+
+[node name="Conductor" type="Sprite2D" parent="main/Character"]
+
+[node name="Greedyman" type="Sprite2D" parent="main/Character"]
+
+[node name="Girl" type="Sprite2D" parent="main/Character"]
+
+[node name="Hider" type="Sprite2D" parent="main/Character"]
+
+[node name="Background" type="Sprite2D" parent="main"]
+position = Vector2(577.75, 324)
+scale = Vector2(4.442085, 3.298969)
+texture = ExtResource("2_5nia5")
+
+[node name="UI" type="CanvasLayer" parent="main"]
+
+[node name="DialogueBox" type="Panel" parent="main/UI"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameLabe1" type="Label" parent="main/UI/DialogueBox"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="DialogueText" type="RichTextLabel" parent="main/UI/DialogueBox"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="main/UI/DialogueBox"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
