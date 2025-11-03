@@ -666,7 +666,7 @@ func show_result() -> void:
 	var t = Game.trust
 
 	print("⚖️ 结局判断 → Greed:", g, "Charity:", c, "Trust:", t)
-
+	%bgm.stop()
 	if g <= -1 or c >= 2 or t >= 1:
 		%end_effect1.play()
 		text.text = "✨ GOOD ENDING ✨\nGreed: %d  Charity: %d  Trust: %d" % [g, c, t]

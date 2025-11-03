@@ -1,10 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://e0ppgytcu6vp"]
+[gd_scene load_steps=10 format=3 uid="uid://e0ppgytcu6vp"]
 
 [ext_resource type="Script" uid="uid://dulunelylmgby" path="res://main.gd" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://cimjdj0rwhgol" path="res://background.JPG" id="2_0xm2m"]
+[ext_resource type="VideoStream" uid="uid://cjrcflet17uyb" path="res://ending music/5be5d78dd4574055aceb9e7ca7c49bd5.ogv" id="2_5vw27"]
 [ext_resource type="Texture2D" uid="uid://cixrabtqpvomi" path="res://Conductor.PNG" id="3_h2yge"]
 [ext_resource type="AudioStream" uid="uid://c1e10bhlyt3xf" path="res://43_1761971717.mp3" id="4_lquwl"]
 [ext_resource type="AudioStream" uid="uid://cwl1bk4wx8rut" path="res://鼠标点击3-xys20070412.wav" id="5_lquwl"]
+[ext_resource type="AudioStream" uid="uid://ys82acc8at7n" path="res://he.mp3" id="6_7mycd"]
+[ext_resource type="AudioStream" uid="uid://bwvi7gu1e4yol" path="res://be.mp3" id="7_5vw27"]
+[ext_resource type="AudioStream" uid="uid://dgjs525sqtft4" path="res://oe.mp3" id="8_kek77"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
 bg_color = Color(0, 0, 0, 0.6745098)
@@ -32,17 +35,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Background" type="TextureRect" parent="Control"]
+[node name="Background" type="VideoStreamPlayer" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -555.848
+offset_bottom = -132.59985
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.5342593, 1.1701847)
-texture = ExtResource("2_0xm2m")
-expand_mode = 1
-stretch_mode = 2
+stream = ExtResource("2_5vw27")
+autoplay = true
+expand = true
+loop = true
 
 [node name="Conductor" type="TextureRect" parent="Control"]
 unique_name_in_owner = true
@@ -127,12 +133,12 @@ autoplay = true
 
 [node name="end_effect1" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-autoplay = true
+stream = ExtResource("6_7mycd")
 
 [node name="end_effect2" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-autoplay = true
+stream = ExtResource("7_5vw27")
 
 [node name="end_effect3" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-autoplay = true
+stream = ExtResource("8_kek77")
