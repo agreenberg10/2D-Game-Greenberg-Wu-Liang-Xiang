@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://e16b8urh68s1"
+path="res://.godot/imported/click-buttons-ui-menu-sounds-effects-button-7-203601.mp3-560cc13871810564ab2c081a6788ea7f.mp3str"
+
+[deps]
+
+source_file="res://UI click/click-buttons-ui-menu-sounds-effects-button-7-203601.mp3"
+dest_files=["res://.godot/imported/click-buttons-ui-menu-sounds-effects-button-7-203601.mp3-560cc13871810564ab2c081a6788ea7f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
