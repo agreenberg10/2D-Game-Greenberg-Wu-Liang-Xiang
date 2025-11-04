@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmpune3kwjxkt"
+path="res://.godot/imported/happy ending.MP3-e123462bf5bab52785f0096a06caac49.mp3str"
+
+[deps]
+
+source_file="res://happy ending.MP3"
+dest_files=["res://.godot/imported/happy ending.MP3-e123462bf5bab52785f0096a06caac49.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,35 +1,30 @@
 extends Node2D
 
-@onready var name_label = $UI/DialogueBox/NameLabel
-@onready var text_label = $UI/DialogueBox/DialogueText
+@onready var name_label        = $UI/DialogueBox/NameLabel
+@onready var text_label        = $UI/DialogueBox/DialogueText
 @onready var choices_container = $UI/DialogueBox/ChoicesContainer
 
-var dialogue = []
-var current_line = 0
+var lines = [
+	{"name":"Girl",        "text":"Would you share your bread?"},
+	{"name":"Greedy Man",  "text":"Give it to me. I will make better use of it."},
+	{"name":"Player",      "text":"...What should I do?"},
+	{"name":"System",      "text":"Your choice will be remembered."}
+]
+
+var index := 0
 
 func _ready():
-	load_dialogue()
 	show_line()
 
-func load_dialogue():
-	dialogue = [
-		{"name":"Girl", "text":"Would you share your bread?"},
-		{"name":"GreedyMan", "text":"We must invest it wisely!"},
-		{"name":"Player", "text":"...What should I do?"}
-	]
-
 func show_line():
-	if current_line < dialogue.size():
-		var line = dialogue[current_line]
-		name_label.text = line["name"]
-		text_label.text = line["text"]
-		clear_choices()
-
-		# Show choices only when Girl speaks
-		if line["name"] == "Girl":
+	clear_choices()
+	if index < lines.size():
+		var L = lines[index]
+		name_label.text = L["name"]
+		text_label.text = L["text"]
+		if L["name"] == "Girl":
 			show_choices(["Give bread","Refuse","Let the girl decide"])
 	else:
-		# After dialogue, move to next scene
 		get_tree().change_scene_to_file("res://CryptoPitch.tscn")
 
 func clear_choices():
@@ -38,21 +33,24 @@ func clear_choices():
 
 func show_choices(options:Array):
 	for opt in options:
-		var btn = Button.new()
+		var btn := Button.new()
 		btn.text = opt
-		btn.connect("pressed", Callable(self, "_on_choice_pressed").bind(opt))
+		btn.pressed.connect(_on_choice.bind(opt))
 		choices_container.add_child(btn)
 
-func _on_choice_pressed(choice):
+func _on_choice(choice:String):
 	match choice:
 		"Give bread":
-			print("You gave bread → Charity +1")
+			GameState.charity += 1
 		"Refuse":
-			print("You refused → Greed +1")
+			GameState.greed += 1
 		"Let the girl decide":
-			print("You respected choice → Trust +1")
-	next_line()
-
-func next_line():
-	current_line += 1
+			GameState.charity += 2
+			GameState.trust += 1
+	index += 1
 	show_line()
+
+func _unhandled_input(event):
+	if event.is_action_pressed("ui_accept") and choices_container.get_child_count() == 0:
+		index += 1
+		show_line()

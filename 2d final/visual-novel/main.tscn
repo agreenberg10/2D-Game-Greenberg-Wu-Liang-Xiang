@@ -1,0 +1,144 @@
+[gd_scene load_steps=10 format=3 uid="uid://e0ppgytcu6vp"]
+
+[ext_resource type="Script" uid="uid://dulunelylmgby" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="VideoStream" uid="uid://cjrcflet17uyb" path="res://ending music/5be5d78dd4574055aceb9e7ca7c49bd5.ogv" id="2_5vw27"]
+[ext_resource type="Texture2D" uid="uid://cixrabtqpvomi" path="res://Conductor.PNG" id="3_h2yge"]
+[ext_resource type="AudioStream" uid="uid://c1e10bhlyt3xf" path="res://43_1761971717.mp3" id="4_lquwl"]
+[ext_resource type="AudioStream" uid="uid://cwl1bk4wx8rut" path="res://鼠标点击3-xys20070412.wav" id="5_lquwl"]
+[ext_resource type="AudioStream" uid="uid://ys82acc8at7n" path="res://he.mp3" id="6_7mycd"]
+[ext_resource type="AudioStream" uid="uid://bwvi7gu1e4yol" path="res://be.mp3" id="7_5vw27"]
+[ext_resource type="AudioStream" uid="uid://dgjs525sqtft4" path="res://oe.mp3" id="8_kek77"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+bg_color = Color(0, 0, 0, 0.6745098)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="main" type="CanvasLayer"]
+script = ExtResource("1_ig7tw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="VideoStreamPlayer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -555.848
+offset_bottom = -132.59985
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5342593, 1.1701847)
+stream = ExtResource("2_5vw27")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Conductor" type="TextureRect" parent="Control"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 102.0
+offset_top = 90.0
+offset_right = 2507.8396
+offset_bottom = 3310.5662
+scale = Vector2(0.27921644, 0.27921647)
+texture = ExtResource("3_h2yge")
+
+[node name="buttonlist" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -405.0
+offset_top = 509.0
+offset_right = 446.0
+offset_bottom = 642.0
+grow_horizontal = 2
+
+[node name="Panel2" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = -229.0
+offset_right = -67.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h2yge")
+
+[node name="Text" type="Label" parent="Control/Panel2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 41.0
+offset_top = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "ddddddddddddddddddd"
+autowrap_mode = 3
+
+[node name="npc_name_text" type="Label" parent="Control/Panel2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 41.0
+offset_top = 12.0
+offset_bottom = 47.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 20
+text = "ddddddddddddddddddd"
+autowrap_mode = 3
+
+[node name="nextbtn" type="TextureButton" parent="Control/Panel2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_lquwl")
+autoplay = true
+
+[node name="click_effect" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_lquwl")
+autoplay = true
+
+[node name="end_effect1" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("6_7mycd")
+
+[node name="end_effect2" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("7_5vw27")
+
+[node name="end_effect3" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("8_kek77")
